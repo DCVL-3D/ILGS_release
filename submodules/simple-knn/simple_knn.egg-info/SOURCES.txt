@@ -1,3 +1,4 @@
+LICENSE.md
 ext.cpp
 setup.py
 simple_knn.cu

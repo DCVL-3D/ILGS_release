@@ -73,7 +73,7 @@ def _ssim(img1, img2, window, window_size, channel, size_average=True):
 
     
 def loss_semantic_3d(features, ids, clip_features, k=10, lambda_val=2.0, 
-                                      max_points=200000, sample_size=1000, margin=0.5, random_neighbor_count=300):
+                                      max_points=200000, sample_size=1000, margin=0.5, random_neighbor_count=50):
 
     if features.size(0) > max_points:
         indices = torch.randperm(features.size(0))[:max_points]

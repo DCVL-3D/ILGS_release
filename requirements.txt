@@ -1,0 +1,7 @@
+scipy
+plyfile
+tqdm
+opencv-python
+scikit-learn
+open_clip
+git+https://github.com/mlfoundations/open_clip.git

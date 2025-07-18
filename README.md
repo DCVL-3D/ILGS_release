@@ -15,5 +15,20 @@ ILGS introduces two key components: an **identity-aware semantic consistency los
 
 We provide:
 
-- 💻 **Full Implementation**: The complete source code for ILGS.
+- ✅ **Full Implementation**: The complete source code for ILGS.
 - 🪄 **3D Editing Demos**: Examples of object removal, color modification, and resizing.
+
+## Installation
+
+Please refer to [Installation.md](documents/Installation.md) for installation.
+
+## Download
+
+We provide guidelines to download datasets. </br>
+Please check [Download.md](documents/Download.md) for more information.
+
+## ✅Full Implementation
+
+Prepare Please refer to [Implementation.md](documents/Implementation.md) for open-vocabulary segmentation.
+
+
