@@ -4,7 +4,7 @@ Official Pytorch implementation "Identity-aware Language Gaussian Splatting for 
 [SungMin Jang](https://github.com/jsmbank), and [Wonjun Kim](https://sites.google.com/view/dcvl) (Corresponding Author) <br>
 🌸***IEEE/CVF International Conference on Computer Vision, (ICCV)***, Oct. 2025.🌸
 
-![ Training pipeline ](./figures/fig2.jpeg)
+![ Training pipeline ](./documents/fig2.jpeg)
 <p align="center">[ Training pipeline ]</p>
 
 ## :eyes: Overview
