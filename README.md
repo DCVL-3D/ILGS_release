@@ -33,3 +33,23 @@ Prepare Please refer to [Implementation.md](documents/Implementation.md) for ope
 
 
 ## 🪄 3D Editing Demos
+
+
+## Acknowledgments
+This work was supported by the National Research Foundation of Korea (NRF) funded by the Korea Government (MSIT) under Grant RS-2023-NR076462.
+
+Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
+
+[lkeab/gaussian-grouping]([[https://github.com/graphdeco-inria/gaussian-splatting](https://github.com/minghanqin/LangSplat)](https://github.com/lkeab/gaussian-grouping))  </br>
+[minghanqin/LangSplat](https://github.com/VITA-Group/FSGS)  </br>
+
+## Citation
+If you find our work useful for your project, please consider citing the following paper.
+```
+@inproceedings{jsmbankILGS,
+  title={Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation},
+  author={Jang, SungMin and Kim, Wonjun},
+  booktitle={Proceedings of the international conference on computer vision},
+  year={2025}
+}
+```
