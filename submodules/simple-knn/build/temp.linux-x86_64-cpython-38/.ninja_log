@@ -1,0 +1,4 @@
+# ninja log v5
+0	10722	1733283118742767468	/mnt/jsm/gaussian-grouping_original/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/simple_knn.o	6de5ae4d39a7305e
+0	25253	1733283133258682267	/mnt/jsm/gaussian-grouping_original/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/ext.o	348e1b7aff193ebd
+0	47524	1733283155546551747	/mnt/jsm/gaussian-grouping_original/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/spatial.o	ddbcaa6a6bae8c7e
