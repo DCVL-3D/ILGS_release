@@ -14,7 +14,7 @@ case "$#" in
         ;;
 esac
 
-dataset_folder="data/$dataset_name"
+dataset_folder="dataset/$dataset_name"
 
 # Check for the existence of the dataset folder
 if [ ! -d "$dataset_folder" ]; then

@@ -27,8 +27,9 @@ Please refer to [Installation.md](documents/Installation.md) for installation.
 We provide guidelines to download datasets. </br>
 Please check [Download.md](documents/Download.md) for more information.
 
-## ✅Full Implementation
+## ✅ Full Implementation
 
 Prepare Please refer to [Implementation.md](documents/Implementation.md) for open-vocabulary segmentation.
 
 
+## 🪄 3D Editing Demos

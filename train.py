@@ -36,7 +36,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
 
     data_name = os.path.basename(os.path.normpath(dataset.source_path))
-    language_feature_dir = f"/mnt/jsm/ILGS/data/lerf/{data_name}/language_features_dim3"
+    language_feature_dir = f"/mnt/jsm/ILGS/dataset/lerf/{data_name}/language_features_dim3"
 
 
     iter_start = torch.cuda.Event(enable_timing = True)
