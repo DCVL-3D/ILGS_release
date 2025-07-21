@@ -4,7 +4,7 @@ This guide demonstrates how to perform common 3D editing tasks such as object re
 
 ### **Prerequisite: Training**
 
-Before you can perform any edits, you must first complete the training process as described in the [Implementation Guide](documents/Implementation.md). Once training is finished, save the output model file, which you will then use for editing.
+Before you can perform any edits, you must first complete the training process as described in the [Implementation Guide](Implementation.md). Once training is finished, save the output model file, which you will then use for editing.
 
 ---
 
