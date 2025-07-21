@@ -151,7 +151,6 @@ def modify(dataset, iteration, pipeline, skip_train, skip_test):
 
     iteration_str = f"_object_resize/iteration_{scene.loaded_iter}"
 
-    # 수정된 결과 렌더링
     if not skip_train:
         render_set(dataset.model_path, "train", iteration_str, scene.getTrainCameras(), gaussians, pipeline, background)
     if not skip_test:
