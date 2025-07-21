@@ -3,12 +3,14 @@ import numpy as np
 from PIL import Image
 import cv2
 import sys
+from argparse import ArgumentParser
 
-dataset_name = sys.argv[1]
 
-gt_folder_path = os.path.join('/mnt/jsm/gaussian-grouping/data/lerf',dataset_name,'test_mask')
-# You can change pred_folder_path to your output
-pred_folder_path = os.path.join('/mnt/jsm/gaussian-grouping/lerf_mask',dataset_name)
+# dataset_name = sys.argv[1]
+
+# gt_folder_path = os.path.join('/mnt/jsm/gaussian-grouping/data/lerf',dataset_name,'test_mask')
+# # You can change pred_folder_path to your output
+# pred_folder_path = os.path.join('/mnt/jsm/gaussian-grouping/lerf_mask',dataset_name)
 
 # General util function to get the boundary of a binary mask.
 # https://gist.github.com/bowenc0221/71f7a02afee92646ca05efeeb14d687d
@@ -72,6 +74,27 @@ def calculate_iou(mask1, mask2):
     iou = np.sum(intersection) / np.sum(union)
     return iou
 
+parser = ArgumentParser(description="Evaluate segmentation masks by calculating IoU and Boundary IoU.")
+parser.add_argument("-m", "--model_output_path", type=str, required=True, 
+                    help="Path to the model output directory (e.g., output/lerf/teatime)")
+args = parser.parse_args()
+
+# 입력 경로에서 GT 경로와 Pred 경로를 동적으로 생성
+pred_folder_path = os.path.join(args.model_output_path, "test/ours_30000_text/test_mask")
+dataset_base_path = args.model_output_path.replace("output", "dataset", 1)
+gt_folder_path = os.path.join(dataset_base_path, "test_mask")
+
+print(f"Ground Truth Path: {gt_folder_path}")
+print(f"Prediction Path:   {pred_folder_path}")
+
+# 경로 존재 여부 확인 후 에러 처리 또는 진행
+if not os.path.isdir(gt_folder_path):
+    print(f"Error: Ground Truth path not found at '{gt_folder_path}'")
+    exit()
+if not os.path.isdir(pred_folder_path):
+    print(f"Error: Prediction path not found at '{pred_folder_path}'")
+    exit()
+    
 iou_scores = {}  # Store IoU scores for each class
 biou_scores = {}
 class_counts = {}  # Count the number of times each class appears
