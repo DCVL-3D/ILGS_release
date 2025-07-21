@@ -18,12 +18,10 @@ DATASET_TEXT_QUERIES = {
 }
 
 def get_queries_for_dataset(model_path):
-    """
-    모델 경로에 포함된 데이터셋 이름을 기반으로 적절한 텍스트 쿼리 목록을 반환합니다.
-    """
+
     for dataset_name, queries in DATASET_TEXT_QUERIES.items():
         if dataset_name in model_path:
-            print(f"✅ Dataset '{dataset_name}' detected. Using the corresponding text queries.")
+            print(f" Dataset '{dataset_name}' detected. Using the corresponding text queries.")
             return queries
     print("⚠️ Warning: Could not detect a known dataset name in the model path. No text queries selected.")
     return None
