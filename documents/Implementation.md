@@ -50,7 +50,7 @@ bash script/train_lerf.sh lerf/teatime 1
 2. Decode 3-D features to 512-D:
 
    ```bash
-   python feature_projector.py lerf/figurines
+   python feature_projector.py lerf/teatime
    ```
 3. Generate segmentation masks:
 
