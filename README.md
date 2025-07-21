@@ -60,7 +60,7 @@ This work was supported by the National Research Foundation of Korea (NRF) funde
 
 Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
 
-[lkeab/gaussian-grouping]([[https://github.com/graphdeco-inria/gaussian-splatting](https://github.com/minghanqin/LangSplat)](https://github.com/lkeab/gaussian-grouping))  </br>
+[lkeab/gaussian-grouping](https://github.com/lkeab/gaussian-grouping)  </br>
 [minghanqin/LangSplat](https://github.com/minghanqin/LangSplat)  </br>
 
 ## Citation
