@@ -13,16 +13,13 @@ from PIL import Image
 from render import feature_to_rgb, visualize_obj
 
 def render_set_all(model_path, name, iteration, views, gaussians, pipeline, background, classifier):
-    """
-    지정한 phase(예: "train", "test")의 view에 대해 렌더링 결과를 저장합니다.
-    """
+
     base_path = os.path.join(model_path, name, "ours_{}_text".format(iteration))
     renders_path = os.path.join(base_path, "renders")
     colormask_path = os.path.join(base_path, "objects_feature16")
     feature_npy_path = os.path.join(base_path, "feature_map_npy")
     logits_path = os.path.join(base_path, "logits")
     
-    # GT 경로 생성을 제외하고 필요한 폴더만 생성
     for path in [renders_path, colormask_path, feature_npy_path, logits_path]:
         makedirs(path, exist_ok=True)
     
@@ -36,10 +33,8 @@ def render_set_all(model_path, name, iteration, views, gaussians, pipeline, back
 
         np.save(os.path.join(feature_npy_path, '{0:05d}.npy'.format(idx)), rendering_clip.cpu().numpy())
 
-        # renders 폴더에 이미지를 바로 저장
         torchvision.utils.save_image(rendering, os.path.join(renders_path, '{0:05d}.png'.format(idx)))
 
-        # 나머지 시각화 및 데이터 저장
         rgb_mask = feature_to_rgb(rendering_obj)
         Image.fromarray(rgb_mask).save(os.path.join(colormask_path, '{0:05d}.png'.format(idx)))
 
@@ -65,7 +60,6 @@ def render_sets(dataset: ModelParams, iteration: int, pipeline: PipelineParams, 
         bg_color = [1, 1, 1] if dataset.white_background else [0, 0, 0]
         background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
         
-        # train, test 각각에 대해 모두 결과를 생성
         for phase, skip in [("train", skip_train), ("test", skip_test)]:
             if not skip:
                 if phase == "train":
