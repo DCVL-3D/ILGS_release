@@ -37,7 +37,7 @@ Please check [Download.md](documents/Download.md) for more information.
 To get started with the full implementation of our open-vocabulary segmentation model, please follow the instructions in the [Implementation.md](documents/Implementation.md).
 
 
-## 🪄 3D Editing Demos
+## 🪄 3D Editing 
 For instructions on our 3D editing features, please refer to the [Editing.md](documents/Edit.md). This guide explains how to launch the interactive demos and use functionalities like object removal, color modification, and resizing.
 
 ## Results
