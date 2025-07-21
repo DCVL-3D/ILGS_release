@@ -1,39 +1,71 @@
-## Precessing dataset
+# ILGS Implementation
 
-1. gengerate language features of the scenes. 
+A quick-start guide for preprocessing scene language features, training ILGS, performing open-vocabulary segmentation, and evaluating results.
+
+---
+
+## 1. Dataset Preprocessing
+
+Generate language features of the scenes:
+
+```bash
+python preprocess.py --dataset_path $dataset_path
 ```
-python preprocess.py --dataset_path $dataset_path 
-```
-2. train the Autoencoder and get the 3-dim feature
-```
-# train the autoencoder
+
+Train the autoencoder and extract 3-dimensional scene features:
+
+```bash
+# Train the autoencoder
 cd autoencoder
-python train.py --dataset_name $dataset_path --encoder_dims 256 128 64 32 3 --decoder_dims 16 32 64 128 256 256 512 --lr 0.0007 --output ae_ckpt
+python train.py \
+  --dataset_name $dataset_path \
+  --encoder_dims 256 128 64 32 3 \
+  --decoder_dims 16 32 64 128 256 256 512 \
+  --lr 0.0007 \
+  --output ae_ckpt
 
-# get the 3-dims language feature of the scene
+# Extract 3-D features
 python test.py --dataset_name $dataset_path --output
 ```
 
-## Train the ILGS
-```
-# Example teatime dataset
+---
+
+## 2. Train the ILGS
+
+Train ILGS on your dataset (example: `teatime`):
+
+```bash
 bash script/train_lerf.sh lerf/teatime 1
 ```
 
-## Open-vocabulary segmentation 
-```
-# Example teatime dataset
-python render_all.py -m output/lerf/teatime --skip_train
+---
 
-# decode 3-dim language features to 512-dim
-python feature_projector.py lerf/figurines
+## 3. Open-Vocabulary Segmentation
 
-# make segmenttaion mask 
-python make_test_mask.py
-```
+1. Render and skip training:
 
-## Evaluaiton 
-```
-# Example teatime dataset
+   ```bash
+   python render_all.py -m output/lerf/teatime --skip_train
+   ```
+2. Decode 3-D features to 512-D:
+
+   ```bash
+   python feature_projector.py lerf/figurines
+   ```
+3. Generate segmentation masks:
+
+   ```bash
+   python make_test_mask.py
+   ```
+
+---
+
+## 4. Evaluation
+
+Evaluate segmentation masks against ground truth:
+
+```bash
 python script/eval_lerf_mask.py teatime
 ```
+
+---

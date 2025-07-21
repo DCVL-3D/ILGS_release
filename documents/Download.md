@@ -1,4 +1,4 @@
-## Download
+# Download
 
  Download datasets and pseudo labels for training.
 
@@ -34,3 +34,4 @@ lerf_mask
 |____teatime
 | |____...
 ```
+

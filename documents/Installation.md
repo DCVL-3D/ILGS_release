@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 Our codebase is developed based on Ubuntu 18.04 and Pytorch framework.
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 pip install submodules/ILGS-rasterization
 pip install submodules/simple-knn
 ```
-Install Segment-Anything-Langsplt and download the checkpoint SAM
+### Install Segment-Anything-Langsplt and download the checkpoint SAM
 
 
 `Segment-Anything-Langsplt` : [segment-anything-langsplat](https://github.com/minghanqin/segment-anything-langsplat) </br>
