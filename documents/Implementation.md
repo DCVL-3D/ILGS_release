@@ -55,7 +55,7 @@ bash script/train_lerf.sh lerf/teatime 1
 3. Generate segmentation masks:
 
    ```bash
-   python make_test_mask.py
+   python segmentation_mask.py -m output/lerf/teatime
    ```
 
 ---
@@ -65,7 +65,7 @@ bash script/train_lerf.sh lerf/teatime 1
 Evaluate segmentation masks against ground truth:
 
 ```bash
-python script/eval_lerf_mask.py teatime
+python script/eval_lerf_mask.py -m output/lerf/teatime
 ```
 
 ---
