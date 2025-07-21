@@ -21,28 +21,28 @@ ILGS introduces two key components: an **identity-aware semantic consistency los
 We provide:
 
 - ✅ **Full Implementation**: The complete source code for ILGS.
-- 🪄 **3D Editing Demos**: Examples of object removal, color modification, and resizing.
+- 🪄 **3D Editing**: Examples of object removal, color modification, and resizing.
 
-## Installation
+## 💿 Installation
 
-Please refer to [Installation.md](documents/Installation.md) for installation.
+For detailed instructions on how to set up the environment and install dependencies, please refer to our [Installation.md](documents/Installation.md) 
 
-## Download
+## 📂 Download
 
 We provide guidelines to download datasets. </br>
 Please check [Download.md](documents/Download.md) for more information.
 
 ## ✅ Full Implementation
 
-Prepare Please refer to [Implementation.md](documents/Implementation.md) for open-vocabulary segmentation.
+To get started with the full implementation of our open-vocabulary segmentation model, please follow the instructions in the [Implementation.md](documents/Implementation.md).
 
 
 ## 🪄 3D Editing Demos
-Prepare Please refer to [Editing.md](documents/Edit.md) for editing.
+For instructions on our 3D editing features, please refer to the [Editing.md](documents/Edit.md). This guide explains how to launch the interactive demos and use functionalities like object removal, color modification, and resizing.
 
 ## Results
 
-**Results of semantic segmentation by the proposed method on LERF-Mask benchmark datasets.**
+**Below are the semantic segmentation results of our proposed method on the LERF-Mask benchmark.**
 ![result](documents/Result.jpg)
 
 ## License
