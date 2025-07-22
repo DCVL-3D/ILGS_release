@@ -68,7 +68,7 @@ If you find our work useful for your project, please consider citing the followi
 ```
 @inproceedings{jsmbankILGS,
   title={Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation},
-  author={Jang, SungMin and Kim, Wonjun},
+  author={SungMin Jang and Wonjun Kim},
   booktitle={Proceedings of the International Conference on Computer Vision},
   year={2025}
 }
