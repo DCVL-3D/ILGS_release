@@ -8,6 +8,7 @@
 Official Pytorch implementation "Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation" <br>
 [SungMin Jang](https://github.com/jsmbank), and [Wonjun Kim](https://sites.google.com/view/dcvl) (Corresponding Author) <br>
 🌸***IEEE/CVF International Conference on Computer Vision, (ICCV)***, Oct. 2025.🌸
+
 [![Video](https://img.shields.io/badge/YouTube-Video-c4302b?logo=youtube&logoColor=red)](https://www.youtube.com/watch?v=IdJYIZfuwfE&t=5s)
 
 ![ Training pipeline ](documents/Pipeline.jpeg)
