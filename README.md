@@ -5,8 +5,7 @@
   <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-%E2%9D%A4-red.svg?style=flat-square"></a>
 </p> -->
 
-Official Pytorch implementation "Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation" <br>
-Official Pytorch implementation [**"Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation"**](https://openaccess.thecvf.com/content/ICCV2025/papers/Jang_Identity-aware_Language_Gaussian_Splatting_for_Open-vocabulary_3D_Semantic_Segmentation_ICCV_2025_paper.pdf)
+Official Pytorch implementation [**"Identity-aware Language Gaussian Splatting for Open-vocabulary 3D Semantic Segmentation"**](https://openaccess.thecvf.com/content/ICCV2025/papers/Jang_Identity-aware_Language_Gaussian_Splatting_for_Open-vocabulary_3D_Semantic_Segmentation_ICCV_2025_paper.pdf) <br>
 [SungMin Jang](https://github.com/jsmbank), and [Wonjun Kim](https://sites.google.com/view/dcvl) (Corresponding Author) <br>
 🌸***IEEE/CVF International Conference on Computer Vision, (ICCV)***, Oct. 2025.🌸
 
